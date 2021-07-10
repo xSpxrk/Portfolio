@@ -12,6 +12,10 @@ body {
   sans-serif;
   font-size: 1rem;
   color: @black;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,5 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 @import "blocks/work";
 @import "blocks/about";
 @import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
 
 @import "helpers";
