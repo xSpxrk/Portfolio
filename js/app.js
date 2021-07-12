@@ -30,9 +30,24 @@ $(function() {
     const modalClose = $("[data-close]")
 
     modalCall.on("click", function(event) {
+
       event.preventDefault();
       let $this = $(this);
       let modalId = $this.data('modal');
+
+      var numItems = $(modalId).find('.modal-work__photo').length;
+      if (numItems < 2){
+        $(modalId).find('.slick-dots').css({
+          display: "none"
+        });
+        $(modalId).find('.slickPrev').css({
+          display: "none"
+        });
+        $(modalId).find('.slickNext').css({
+          display: "none"
+        });
+      }
+      console.log(numItems);
       $(modalId).addClass('show');
       $("body").addClass('no-scroll');
 
@@ -60,7 +75,6 @@ $(function() {
         modalParent.removeClass('show');
         $("body").removeClass('no-scroll');
       }, 300);
-
 
     });
 
