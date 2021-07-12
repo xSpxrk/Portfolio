@@ -1,24 +1,42 @@
 // main: ../style.less
 .intro {
   margin: 100px 0;
+
+  @media @mobile {
+    margin: 0;
+  }
 }
 .intro__inner {
   display: flex;
   border-bottom: 1px solid fade(@gray, 30%);
-  padding-bottom: 120px;
-  padding-top: 100px;
+  padding-bottom: 8rem;
+  padding-top: 6.6rem;
   background: url("../images/symbols.png") right bottom no-repeat;
   position: relative;
+
+  @media @tablet {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-size: 385px auto;
+  }
 }
 
 .intro__content {
   width: 50%;
+
+  @media @mobile-sm {
+    width: 100%;
+  }
 }
 
 .intro__subtitle {
   font-size: 2.13rem;
   color: @black;
   font-weight: 200;
+
+  @media @tablet {
+    font-size: 1.5rem;
+  }
 }
 
 .intro__title {
@@ -26,6 +44,10 @@
   font-size: 3rem;
   color: @black;
   font-weight: 700;
+
+    @media @tablet {
+      font-size: 2rem;
+    }
 }
 
 .intro__text {
@@ -39,4 +61,12 @@
   bottom: 0;
   right: 5px;
   z-index: 1;
+
+  @media @tablet {
+    width: 350px;
+  }
+
+  @media @mobile-sm {
+    display: none;
+  }
 }

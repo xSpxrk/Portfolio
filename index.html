@@ -16,7 +16,7 @@
            <div class="header__inner">
              <div class="user">
                <div class="user__avatar">
-                 <img src="https://placehold.it/57/333" alt="">
+                 <img src="images/header.jpg" alt="">
                </div>
                <div class="user__content">
                  <div class="user__name">
@@ -28,11 +28,14 @@
                </div>
              </div>
              <nav class="nav">
-               <a class="nav__link" href="#">работы</a>
-               <a class="nav__link" href="#">про меня</a>
+               <a class="nav__link" href="#works">работы</a>
+               <a class="nav__link" href="#about">про меня</a>
                <a class="nav__link" href="#">контакты</a>
-               <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire">Нанять</a>
              </nav>
+             <div class="burger">
+               <img class="burger__icon" src="images/burger.svg" alt="">
+
+             </div>
            </div>
         </div>
       </header>
@@ -47,22 +50,20 @@
               <h1 class="intro__title">Вячеслав Ненайденко</h1>
               <div class="intro__text">Python Разработчик</div>
               <div class="social">
-                <a class="social__link"href="#">
+                <a class="social__link" target="_blank" href="https://vk.com/spxrk">
                 <img src="images/vk.svg" alt="" height="41px" width="41px">
                 </a>
-                <a class="social__link"href="#">
+                <a class="social__link" target="_blank" href="https://www.instagram.com/greedy_beast/">
                 <img src="images/inst.svg" alt="" height="41px" width="41px">
                 </a>
-                <a class="social__link"href="#">
+                <a class="social__link" target="_blank" href="https://t.me/Spxrk">
                 <img src="images/telegram.svg" alt="" height="41px" width="41px">
                 </a>
-                <a class="social__link"href="#">
+                <a class="social__link" target="_blank" href="https://github.com/xSpxrk">
                 <img src="images/github.svg" alt="" height="41px" width="41px">
                 </a>
 
               </div>
-              <a class="btn" href="#" data-modal="#modal_hire">Нанять</a>
-              <button class="btn" type="button" data-modal="#modal_resume">Посмотреть резюме</button>
             </div>
             <img class="intro__photo" src="images/photo.png" alt="">
 
@@ -74,7 +75,7 @@
 
       </section>
 
-
+  <p><a name="works"></a></p>
       <!-- Works -->
       <div class="works">
         <div class="container">
@@ -87,11 +88,11 @@
           <div class="portfolio" id="portfolio">
             <div class="portfolio__col" data-cat="bot">
             <div class="work" data-modal="#modal_project_1">
-              <img class="work__image"src="https://placehold.it/370x300" alt="">
+              <img class="work__image"src="images/project1/intro.svg" alt="">
               <div class="work__content">
                 <div class="work__cat">телеграмм бот</div>
                 <div class="work__title">
-                  Project Title
+                  Бот случайних фотографий
                   <time class="work__date" datetime="2021-25-06">
                     2021
                   </time>
@@ -101,12 +102,12 @@
             </div>
             </div>
             <div class="portfolio__col" data-cat="bot">
-            <div class="work">
-              <img class="work__image"src="https://placehold.it/370x300" alt="">
+            <div class="work" data-modal="#modal_project_2">
+              <img class="work__image"src="images/project2/intro.svg" alt="">
               <div class="work__content">
                 <div class="work__cat">телеграмм бот</div>
                 <div class="work__title">
-                  Project Title
+                  Многофункциональный Бот
                   <time class="work__date" datetime="2021-25-06">
                     2021
                   </time>
@@ -116,12 +117,12 @@
             </div>
             </div>
             <div class="portfolio__col" data-cat="website">
-            <div class="work">
-              <img class="work__image"src="https://placehold.it/370x300" alt="">
+            <div class="work" data-modal="#modal_project_3">
+              <img class="work__image"src="images/project3/project3_slide1.png" alt="">
               <div class="work__content">
                 <div class="work__cat">сайт</div>
                 <div class="work__title">
-                  Project Title
+                  Сайт-визитка
                   <time class="work__date" datetime="2021-25-06">
                     2021
                   </time>
@@ -136,6 +137,7 @@
 
       </div> <!-- /.works -->
 
+  <p><a name="about"></a></p>
 
       <section class="about">
         <div class="container">
@@ -153,8 +155,6 @@
                 <p>Увлекаюсь компьютерными играми, баскетболом, хип-хопом, стилем. Люблю хорошие фильмы и сериалы</p>
 
               </div>
-              <a class="btn" href="#" data-modal="#modal_hire">Нанять</a>
-              <button class="btn" type="button" data-modal="#modal_resume">Посмотреть резюме</button>
             </div>
 
           </div> <!--/.about__inner -->
@@ -162,33 +162,38 @@
         </div> <!--/.container -->
       </section> <!--/.about -->
 
+<!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__credits">
+            <div class="footer__copyright">
+              &copy; 2021 Vyacheslav Nenaydenko
+            </div>
+            <div class="footer__social">
+              <a href="https://vk.com/spxrk" target="_blank">
+              <img src="images/vk-gray.svg" width="24"alt="">
+            </a>
+            <a href="https://www.instagram.com/greedy_beast/" target="_blank">
+            <img src="images/inst-gray.svg" width="24" height="24" alt="">
+          </a>
+          <a  href="https://t.me/Spxrk" target="_blank">
+          <img src="images/telegram-gray.svg" width="24" height="24" alt="">
+          </a>
+          <a href="https://github.com/xSpxrk" target="_blank" >
+          <img src="images/github-gray.svg" width="24" height="24" alt="">
+        </a>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__inner">
-            <div class="footer__credits">
-              <div class="footer__copyright">
-                &copy; 2021 Vyacheslav Nenaydenko
-              </div>
-              <div class="footer__social">
-                <a href="#"target="_blank">
-                <img src="images/vk-gray.svg" width="24"alt="">
-                <img src="images/inst-gray.svg" width="24" height="24" alt="">
-                <img src="images/telegram-gray.svg" width="24" height="24" alt="">
-                <img src="images/github-gray.svg" width="24" height="24" alt="">
-              </a>
-
-              </div>
-            </div> <!-- /.footer__credits -->
-            <nav class="footer__nav">
-              <a class="footer__nav-link" href="#">Работы</a>
-              <a class="footer__nav-link" href="#">Про меня</a>
-              <a class="footer__nav-link" href="#">Контакты</a>
-              <a class="footer__nav-link  footer__nav-link--btn"href="#" data-modal="#modal_hire">Нанять</a>
-            </nav>
-          </div> <!-- /.footer__inner -->
-        </div> <!-- /.container -->
-      </footer>
+            </div>
+          </div> <!-- /.footer__credits -->
+          <nav class="footer__nav">
+            <a class="footer__nav-link" href="#works">Работы</a>
+            <a class="footer__nav-link" href="#about">Про меня</a>
+            <a class="footer__nav-link" href="#">Контакты</a>
+          </nav>
+        </div> <!-- /.footer__inner -->
+      </div> <!-- /.container -->
+    </footer>
 
 
 <!-- Modals -->
@@ -202,25 +207,119 @@
     <div class="modal-work">
       <div class="modal-work__preview">
         <div data-slider="slick">
-          <div><img class="modal-work__photo" src="https://placehold.it/790x780" alt=""></div>
-          <div><img class="modal-work__photo" src="https://placehold.it/790x780/333" alt=""></div>
-
+          <div><img class="modal-work__photo" background src="images/project1/slide1.png" alt=""></div>
         </div>
       </div>
       <div class="modal-work__content">
         <div class="modal-work__header">
-          <h3 class="modal-work__title">Название проекта</h3>
+          <h3 class="modal-work__title">Бот случайных фотографий</h3>
           <div class="modal-work__info">
-            Категория <span class="modal-work__info-divider">|</span> 2021
+            Телеграмм Бот <span class="modal-work__info-divider">|</span> 2021
           </div>
         </div>
         <div class="modal-work__client">
-            <div class="modal-work__client-title">Клиент</div>
-            <div class="modal-work__client-company">Агентство</div>
+            <div class="modal-work__client-title">Практика</div>
+            <div class="modal-work__client-company">Тестирование</div>
         </div>
         <div class="modal-work__text">
-            <p>Lisfafafarfiaifjafauhrefhauifafjakfhafhafuygafaf</p>
-            <p>afjkafjafyahfayfhafafaklfjafhayfyahfafalkfjj</p>
+            <p>Бот создавался для себя, для проверки своих навыков</p>
+            <p>Смысл бота, что любой пользователь может загрузить картинку и получить любую из списка загруженных</p>
+        </div>
+
+        <div class="modal-work_footer">
+          <button class="modal-work__btn slickPrev" type="button">
+            <img src="images/back.svg" height="12px" alt="">
+            Previous
+          </button>
+          <button class="modal-work__btn slickNext" type="button">
+            Next
+            <img src="images/next.svg" height="12px" alt="">
+          </button>
+
+        </div>
+
+      </div> <!-- /.modal-work__content -->
+    </div><!-- /.modal-work -->
+  </div> <!-- /.modal_dialog -->
+
+</div> <!-- /.modal -->
+
+<div class="modal" id="modal_project_2">
+  <div class="modal__dialog">
+
+    <button class="modal__close" name="button" data-close>
+      <img src="images/modal-close.svg" width="34" height="39" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <div data-slider="slick">
+          <div><img class="modal-work__photo" background src="images/project2/slide1.png" alt=""></div>
+        </div>
+      </div>
+      <div class="modal-work__content">
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">Бот с разным функционалом</h3>
+          <div class="modal-work__info">
+            Телеграмм Бот <span class="modal-work__info-divider">|</span> 2021
+          </div>
+        </div>
+        <div class="modal-work__client">
+            <div class="modal-work__client-title">Практика</div>
+            <div class="modal-work__client-company">Тестирование</div>
+        </div>
+        <div class="modal-work__text">
+            <p>Данный бот с большим функционалом.</p>
+            <p>В основном он создавался для тестирования возможностей бота и моих навыков. Работал с библиотекой aiogram, jinja2 и requests</p>
+            <p>Код бота можно посмотреть по ссылке ниже</p>
+            <a class="modal__link"  target="_blank"  href="https://github.com/xSpxrk/TelegramBot">Бот</a>
+        </div>
+
+        <div class="modal-work_footer">
+          <button class="modal-work__btn slickPrev" type="button">
+            <img src="images/back.svg" height="12px" alt="">
+            Previous
+          </button>
+          <button class="modal-work__btn slickNext" type="button">
+            Next
+            <img src="images/next.svg" height="12px" alt="">
+          </button>
+
+        </div>
+
+      </div> <!-- /.modal-work__content -->
+    </div><!-- /.modal-work -->
+  </div> <!-- /.modal_dialog -->
+
+</div> <!-- /.modal -->
+
+<div class="modal" id="modal_project_3">
+  <div class="modal__dialog">
+
+    <button class="modal__close" name="button" data-close>
+      <img src="images/modal-close.svg" width="34" height="39" alt="Close">
+    </button>
+
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <div data-slider="slick">
+          <div><img class="modal-work__photo" src="images/project3/project3_slide1.png" alt=""></div>
+          <div><img class="modal-work__photo" src="images/project3/project3_slide2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="modal-work__content">
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">Сайт-визитка</h3>
+          <div class="modal-work__info">
+            Сайт <span class="modal-work__info-divider">|</span> 2021
+          </div>
+        </div>
+        <div class="modal-work__client">
+            <div class="modal-work__client-title">Идея моя</div>
+            <div class="modal-work__client-company">Тренировка</div>
+        </div>
+        <div class="modal-work__text">
+            <p>Данный сайт разрабатывался для представления себя и тренировки верстки сайта</p>
         </div>
 
         <div class="modal-work_footer">
@@ -251,10 +350,6 @@
     <div class="modal__content">
 
     <h3 class="modal__title text-center">Резюме</h3>
-    <div class="text-center">
-      <a class="btn btn--thin" href="#">Скачать PDF</a>
-      <a class="btn btn--thin" href="#">Печать</a>
-    </div>
 
     <div class="timeline">
       <div class="timeline__col timeline__col--left">
@@ -262,7 +357,7 @@
 
         <div class="timeline__item">
           <time class="timeline__date" datetime="10-07-2021">2021</time>
-          <h5 class="timeline__subtitle">Not yet</h5>
+          <h5 class="timeline__subtitle">Здесь могли бы быть вы</h5>
           <div class="timeline__position">
           </div>
           <div class="timeline__text">
@@ -348,11 +443,6 @@
             </div>
       </div> <!-- /.timeline__col -->
     </div> <!-- /.timeline -->
-
-    <div class="text-center">
-      <a class="btn" href="#">Нанять</a>
-
-    </div>
 
     </div> <!-- /.modal__content -->
   </div> <!-- /.modal_dialog -->
