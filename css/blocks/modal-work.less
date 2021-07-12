@@ -8,6 +8,10 @@
   width: 65%;
   position: relative;
   overflow: hidden;
+
+  @media @tablet {
+      display: none;
+  }
 }
 
 .modal-work__photo {
@@ -27,6 +31,10 @@
   width: 35%;
   padding: 3.4rem 6.6rem 1rem 1.73rem;
   position: relative;
+
+  @media @tablet {
+      width: 100%;
+  }
 
 }
 
@@ -75,4 +83,10 @@
   line-height: 2;
   font-weight: 300;
 
+}
+
+.modal-work__btn {
+  @media @tablet {
+      display: none;
+  }
 }
